@@ -5,7 +5,7 @@ import styles from "./button.module.css"
 function KeyButton({
 	keyword: keyword
 }) {
-	return (<button className={styles.button}>
+	return (<button className={styles.xdbutton}>
 		<div key={keyword.id}>
 			<div className={styles.keywordname}>
 				<strong>{keyword.keyword}</strong>
