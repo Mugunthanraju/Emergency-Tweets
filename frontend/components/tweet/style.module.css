@@ -5,6 +5,10 @@
   grid-gap: 15px;
   padding: 12px 15px;
   border-bottom: 1px solid var(--c-border-color);
+  transition: var(--fade);
+  &:hover {
+    background-color: var(--c-theme-10);
+  }
 }
 
 .avatar {
