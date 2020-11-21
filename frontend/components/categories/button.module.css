@@ -1,0 +1,27 @@
+.keywordname {
+	height: 50px;
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.tweets {
+	margin-top: 7px;
+	color: silver;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.button {
+	cursor: pointer;
+	width: 100%;
+	background: transparent;
+	color: var(--c-text-color);
+	display: flex;
+	transition: var(--fade);
+	text-decoration: none;
+	&:hover {
+		color: var(--c-theme);
+		background-color: var(--c-theme-10);
+	}
+}

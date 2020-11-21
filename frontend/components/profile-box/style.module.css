@@ -17,6 +17,7 @@
 
 .slug {
   color: var(--c-gray);
+  float: left;
 }
 
 .icon {

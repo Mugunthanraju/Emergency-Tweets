@@ -8,9 +8,10 @@
   justify-content: center;
   transition: var(--fade);
   text-decoration: none;
+  border-radius: 4px;
 
   &:hover {
-    color: var(--c-theme);
+	color: var(--c-theme);
     background-color: var(--c-theme-10);
   }
 }

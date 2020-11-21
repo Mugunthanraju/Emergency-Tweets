@@ -10,17 +10,17 @@ import Main from '../col/main'
 import Extra from '../col/extra'
 
 function Layout({ children }) {
-  const size = useWindowSize()
+	const size = useWindowSize()
 
-  return (
-    <div className={cn(styles.layout)}>
-      <Sidebar flat={size.width < CONST.DESKTOP_SIZE}>sidebar</Sidebar>
+	return (
+		<div className={cn(styles.layout)}>
+			<Sidebar flat={size.width < CONST.DESKTOP_SIZE} className={cn(styles.Sidebar)}>sidebar</Sidebar>
 
-      <Main>{children}</Main>
+			<Main>{children}</Main>
 
-      {size.width > CONST.TABLET_SIZE && <Extra>extra</Extra>}
-    </div>
-  )
+			{size.width > CONST.TABLET_SIZE && <Extra>extra</Extra>}
+		</div>
+	)
 }
 
 export default Layout
