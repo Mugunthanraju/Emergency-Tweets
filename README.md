@@ -30,3 +30,10 @@ We achived it by adding an extra button on `Sidebar of Twitter` Clone, by clicki
 <img src="https://github.com/Mugunthanraju/Emergency-Tweets/blob/main/ScreenShot/Steps.jpg" alt="Twitter Application" >
 
 
+### Authored by : 
+
+    1) Ekrem Guzelyel (ML, Backend)
+    2) Mugunthan Raju (Front-end, Database)
+    3) Mert Can Bilgiç (Front-End)
+    4) Soumya Vemuri (Full-Stack)
+    5) Pranav Anand (ML, Backend)
