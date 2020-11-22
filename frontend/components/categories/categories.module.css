@@ -1,0 +1,12 @@
+.key {
+	background: var(--twitter-background);
+	padding: 15px;
+	border-radius: 5px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.keywordheading {
+	font-size: 20px;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 8px;
+}

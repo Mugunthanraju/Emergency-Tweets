@@ -20,16 +20,16 @@ function Layout({ flat }) {
     <div className={cn(styles.sidebar)}>
       <Navigation flat={flat} />
 
-      <div className={styles.tweet}>
+      {/* <div className={styles.tweet}>
         <ThemeButton big full={!flat} onClick={() => isShowModalSet(true)}>
           {flat ? <Tweet /> : 'Tweet'}
         </ThemeButton>
-      </div>
+      </div> */}
 
       {/* tweet-popup */}
-      {isShowModal && (
+      {/* isShowModal && (
         <TweetModal onModalClose={onModalClose} onClick={onModalClose} />
-      )}
+      ) */}
 
       <div className={styles.profile}>
         <ProfileBox flat={flat} />

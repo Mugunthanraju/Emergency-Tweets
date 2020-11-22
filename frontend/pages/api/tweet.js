@@ -1,15 +1,12 @@
 import Twit from '../../lib/twit'
 
 export default (req, res) => {
-  Twit.get('search/tweets', { from: 'mertcbilgic', count: 20 }, function (
-    err,
-    data,
-    response
-  ) {
-    if (err) {
-      return res.status(400).json({ message: 'Ups! bir hata oldu.' })
-    }
-
-    res.status(200).json(data)
-  })
+	fetch('https://22fd2033cc37.ngrok.io/api/', {
+		method: 'post',
+		body: JSON.stringify({ keyword: 'general' })
+	}).then(function (response) {
+		return res.json(response);
+	}).then(function (data) {
+		console.log("interesting")
+	});
 }

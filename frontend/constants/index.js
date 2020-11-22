@@ -12,7 +12,7 @@ export const MENU = [
     path: '/',
     icon: <Icon.Twitter style={{ fontSize: 30 }} />,
     iconSelected: <Icon.Twitter style={{ fontSize: 30 }} />,
-    title: '',
+    title: 'for #emergency',
     notify: 0
   },
   {
@@ -21,30 +21,6 @@ export const MENU = [
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
     title: 'Home',
-    notify: 0
-  },
-  {
-    key: 'notifications',
-    path: '/notifications',
-    icon: <Icon.Notification />,
-    iconSelected: <Icon.NotificationFill />,
-    title: 'Notifications',
-    notify: 17
-  },
-  {
-    key: 'messages',
-    path: '/messages',
-    icon: <Icon.Messages />,
-    iconSelected: <Icon.MessagesFill />,
-    title: 'Messages',
-    notify: 0
-  },
-  {
-    key: 'profile',
-    path: '/profile',
-    icon: <Icon.Profile />,
-    iconSelected: <Icon.ProfileFill />,
-    title: 'Profile',
     notify: 0
   },
   {
