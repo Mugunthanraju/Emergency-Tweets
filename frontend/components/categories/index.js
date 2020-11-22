@@ -5,13 +5,13 @@ import KeyButton from "./button";
 function Categories({ children }) {
 	const [state, setState] = React.useState([
 		{
-			keyword: "#urgent",
+			keyword: "General",
 		},
 		{
-			keyword: "#earthquake",
+			keyword: "Immediate",
 		},
 		{
-			keyword: "#emergency",
+			keyword: "#TwitterSOS",
 		},
 	]);
 

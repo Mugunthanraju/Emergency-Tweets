@@ -20,7 +20,11 @@
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^6.1.0",
+		"react-simple-badges": "^1.9.4",
 		"react-twitter-embed": "^3.0.3",
+		"reactstrap": "^8.7.1",
+		"styled-badge-component": "^4.0.0",
+		"styled-components": "^5.2.1",
 		"swr": "^0.3.0",
 		"twit": "^2.2.11"
 	},
