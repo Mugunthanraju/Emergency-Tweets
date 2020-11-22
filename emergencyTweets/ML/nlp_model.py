@@ -1,6 +1,6 @@
 import re
 import sklearn as sk
-from classes import classes # Categories taken from classes.py
+from ML.classes import classes  # Categories taken from classes.py
 
 
 def classify(sentence):
@@ -15,17 +15,18 @@ def classify(sentence):
     # Get the weights from the sentence
     res = {}
     for cat in classes:
-        weight=0
+        weight = 0
         for i in sentence.split():
             if i in classes[cat]:
-                weight+=1
+                weight += 1
         res[cat] = weight
     # Return most weight
     return max(res, key=res.get)
+
 
 def classify_list(sentence_list):
     """Iteration over multiple sentences.
     Returns:
         Classes as a list of Strings
     """
-    return [classify(x) for x in sentence_list]
+    return [classify(x.text) for x in sentence_list]
