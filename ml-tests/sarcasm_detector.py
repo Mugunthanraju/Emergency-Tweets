@@ -2,7 +2,8 @@ import re
 import pickle as pk
 
 def get_model():
-    "Returns model, transformer, ps, results"
+    """Returns model, transformer, ps, results
+    This model is trained on Sarcasm_Headlines_Dataset from Kaggle"""
     return pk.load(open("model_transform_results.pk", "rb"))
 
 def preprocess(sentences, ps):
