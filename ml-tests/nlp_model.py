@@ -9,6 +9,7 @@ def classify(sentence):
     Returns:
         Class name with most weight as String
     """
+    print(sentence)
     # Remove the hashtags
     sentence = re.sub('[^A-Za-z0-9 ]+', '', sentence).lower()
     # Get the weights from the sentence

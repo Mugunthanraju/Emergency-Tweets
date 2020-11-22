@@ -16,17 +16,24 @@ clf, tv, ps, scores = sarcasm_detector.get_model()
 
 
 def is_eligible(tweets):
-    """Given list of tweets as text return if emergent/eligible for a test 1, else 0.
+    """Given list of tweets that fetched from search api to check if 
+    they are eligible classification.
     If you want to pass only one tweet, add brackets tweet -> [tweet]
+    
+    Params: 
+        tweets: list of dictionaries taken from search api 
     Returns: 
         1-0 matrix of len(tweets)
     """
-    fear_matrix = [watson_nlu.is_fearful(tweet, nlu_api) for tweet in tweets]
+    fear_matrix = [watson_nlu.is_fearful(tweet.text, nlu_api) for tweet in tweets]
     processed_tweets = sarcasm_detector.preprocess(tweets, ps)
     sarcasm_matrix = clf.predict(tv.transform(processed_tweets))
     return [1 if (fear_matrix[i] and not sarcasm_matrix[i]) else 0 for i in range(len(fear_matrix))]
 
 def emergent_tweets(tweets):
-    "Returns: Emergent tweets with their corresponding Class."
-    eligible_tweets = [tweet for i, tweet in enumerate(tweets) if is_eligible(tweets)[i]]
-    return eligible_tweets, nlp_model.classify_list(eligible_tweets)
+    """ Applies classification criteria to the tweets and returns only eligibles.
+    Returns: 
+        Emergent tweets with text, id, and place vs. corresponding Class.
+    """
+    eligible_tweets = [(tweet.text, tweet.id, tweet.place) for i, tweet in enumerate(tweets) if is_eligible(tweets)[i]]
+    return eligible_tweets, nlp_model.classify_list(list(zip(*eligible_tweets))[0])
