@@ -1,7 +1,7 @@
 import tweepy
-import config # For API Keys and stuff
+import ML.config as config  # For API Keys and stuff
 import pprint
-import emergency_detector
+import ML.emergency_detector as emergency_detector
 
 auth = tweepy.OAuthHandler(config.consumer_key, config.consumer_secret)
 auth.set_access_token(config.access_token, config.access_token_secret)
@@ -14,6 +14,7 @@ def hit_search_api(query, count):
         A search object, json that includes text, id, place etc.
     """
     return api.search(query, count=count)
+
 
 def run_model_on_search(query, count):
     """Run query and model in real time.

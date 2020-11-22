@@ -19,7 +19,7 @@ function TweetModal({ onModalClose = () => {}, onClick = () => {} }) {
         },
         body: JSON.stringify({ tweet })
       })
-      if (response.status !== 200) throw 'Twet gönderilemedi.'
+      if (response.status !== 200) throw 'Tweet cannot be sent.'
 
       tweetSet('')
       onModalClose()
@@ -40,7 +40,7 @@ function TweetModal({ onModalClose = () => {}, onClick = () => {} }) {
               className={styles.textarea}
               name=""
               rows="4"
-              placeholder="Ne düşünüyorsun"
+              placeholder="What do you think?"
               value={tweet}
               onChange={(e) => tweetSet(e.target.value)}
             />
