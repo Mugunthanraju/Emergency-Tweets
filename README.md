@@ -22,9 +22,9 @@ We achived it by adding an extra button on `Sidebar of Twitter` Clone, by clicki
 
 *For flagging and color coding tweets we have a combined model.*
 
-    1) Sarcasm Detector finds out if a tweet is sarcastic, because we all know people like beating around the bush on Twitter (Thanks @Kaitlyn for the idea).
-    2) Fear Detector finds out if the person is scared by using IBM Watson NLU API.
-    3) If the tweet is not sarcastic and has fear elements, then the NLP model classifies those tweets as non-serious, police, or hospital related.
+**1) Sarcasm Detector finds out if a tweet is sarcastic, because we all know people like beating around the bush on Twitter (Thanks @Kaitlyn for the idea).**
+**2) Fear Detector finds out if the person is scared by using IBM Watson NLU API.**
+**3) If the tweet is not sarcastic and has fear elements, then the NLP model classifies those tweets as non-serious, police, or hospital related.**
 
 
 <img src="https://github.com/Mugunthanraju/Emergency-Tweets/blob/main/ScreenShot/Steps.jpg" alt="Twitter Application" >
