@@ -3,11 +3,11 @@
 # NLP model for classification. Done after the other two.
 
 # Import the three packages and pickle
-import classes
 import nlp_model
 import pickle as pk
-import watson_nlu
 import sarcasm_detector
+import watson_nlu
+
 
 
 # Initiate this in the first place. Add to main
