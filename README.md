@@ -21,8 +21,10 @@ We achived it by adding an extra button on `Sidebar of Twitter` Clone, by clicki
 2) Django
 3) Twitter API
 4) Sckit-Learn 
-5) NLTK
+5) NLP
 6) Watson NLU API
+
+<hr>
 
 **The design is simple: We hit the Twitter Search API to get the tweets using queries selected after a thoughtful process. The hashtags are shown on the right, and can be displayed directly.**
 
